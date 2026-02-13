@@ -1,0 +1,22 @@
+@media screen and (max-width: 1440px) and (min-width: 1200px){
+
+/*==========СТРАНИЦА КОНТАКТЫ==========*/
+
+.linkssec_contactspage_content {
+  height: 500px;
+}
+
+.yurinfosec_contactspage_content > img:nth-child(1) {
+  width: 197px;
+}
+
+
+
+
+
+
+
+
+
+
+}
