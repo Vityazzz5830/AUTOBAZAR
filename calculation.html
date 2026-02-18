@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    
+
+	<title>AUTOBAZAR / Пример расчёта</title>
+</head>
+<body>
+	<div class="wrapper ">
+		<header class="header">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="header_content">
+						<div class="header_content_logo">
+							<a href="index.html">
+								<img src="img/header_logo.svg" alt="">
+							</a>
+						</div>
+						<div class="header_content_navmenu">
+							<nav>
+								<ul class="header_content_navmenu_list">
+									<li class="header_content_navmenu_list_item ">
+										<a href="about_company.html">
+											О компании
+										</a>
+									</li>
+									<li class="header_content_navmenu_list_item header_content_navmenu_list_item_active">
+										<a href="calculation.html">
+											Пример расчета
+										</a>
+									</li>
+									<li class="header_content_navmenu_list_item">
+										<a href="contacts.html">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>	
+						<div class="header_content_rightpart">
+							<div class="header_content_contacts">
+								<a href="#">
+									<img src="img/header_tg.svg" alt="">
+								</a>
+								<div class="header_content_contacts_title">
+									<a href="tel:+79241324444">
+										+7 (924) 132-44-44
+									</a>
+									<p>9:00–21:00 по Владивостоку (MSK +7)</p>
+								</div>
+							</div>
+							<a href="#" class="header_content_btn modal_writebtn">
+								<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.05929 19.781L11.6245 9.57803L0.624512 0.780972" stroke="url(#paint0_linear_629_136)" stroke-width="2"/>
+									<defs>
+									<linearGradient id="paint0_linear_629_136" x1="6.12451" y1="0.780972" x2="6.12451" y2="19.781" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#FF5000"/>
+									<stop offset="1" stop-color="#FF6C29"/>
+									</linearGradient>
+									</defs>
+								</svg>
+								<p>Получить расчёт</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="firstsec_calculationpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="firstsec_calculationpage_content">
+						<h2>Пример расчёта стоимости под ключ</h2>
+						<p class="firstsec_calculationpage_content_header_title">Ниже — пример реального расчёта под ключ. Он показывает, из чего складывается итоговая стоимость, какие платежи обязательны, а какие зависят от параметров сделки. Расчёт нужен для понимания бюджета и условий до начала покупки</p>
+						<div class="firstsec_calculationpage_content_data">
+							<div class="firstsec_calculationpage_content_data_title">
+								<h3>Исходные данные</h3>
+								<div class="firstsec_calculationpage_content_data_title_table">
+									<div class="firstsec_calculationpage_content_data_title_table_item">
+										<div class="firstsec_calculationpage_content_data_title_table_item_container">
+											<img src="img/firstsec_calculationpage_content_data_title_table_item_1.svg" alt="">
+											<b>Автомобиль:</b>
+										</div>
+										<p>Toyota Corolla Cross, 2022</p>
+									</div>
+									<div class="firstsec_calculationpage_content_data_title_table_item">
+										<div class="firstsec_calculationpage_content_data_title_table_item_container">
+											<img src="img/firstsec_calculationpage_content_data_title_table_item_2.svg" alt="">
+											<b>Страна покупки:</b>
+										</div>
+										<p>Япония</p>
+									</div>
+									<div class="firstsec_calculationpage_content_data_title_table_item">
+										<div class="firstsec_calculationpage_content_data_title_table_item_container">
+											<img src="img/firstsec_calculationpage_content_data_title_table_item_3.svg" alt="">
+											<b>Двигатель:</b>
+										</div>
+										<p>1.8 бензин (≈140 л.с.)</p>
+									</div>
+									<div class="firstsec_calculationpage_content_data_title_table_item">
+										<div class="firstsec_calculationpage_content_data_title_table_item_container">
+											<img src="img/firstsec_calculationpage_content_data_title_table_item_4.svg" alt="">
+											<b>Город доставки:</b>
+										</div>
+										<p>Новосибирск</p>
+									</div>
+									<div class="firstsec_calculationpage_content_data_title_table_item">
+										<div class="firstsec_calculationpage_content_data_title_table_item_container">
+											<img src="img/firstsec_calculationpage_content_data_title_table_item_5.svg" alt="">
+											<b>Дата расчёта:</b>
+										</div>
+										<p>Январь 2026</p>
+									</div>
+								</div>
+								<div class="firstsec_calculationpage_content_data_total">
+									<p>Итого “под ключ”</p>
+									<h3>2,0 – 2,3 млн ₽</h3>
+									<ul>
+										<li>
+											Точная сумма фиксируется после выбора конкретного автомобиля и подтверждения выкупа, потому что цена авто и часть платежей зависят от даты, курса и параметров конкретного экземпляра
+										</li>
+									</ul>
+								</div>
+							</div>
+							<img class="firstsec_calculationpage_content_data_image" src="img/firstsec_calculationpage_content_data_image.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="detailingsec_calculationpage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="detailingsec_calculationpage_content">
+						<h2>Детализация расходов</h2>
+						<div class="table-wrap detailingsec_calculationpage_content_table">
+						  <table>
+						    <thead class="detailingsec_calculationpage_content_table_thead">
+						      <tr>
+						        <th>Статья расходов</th>
+						        <th>Сумма</th>
+						        <th>Комментарий</th>
+						      </tr>
+						    </thead>
+
+						    <tbody class="detailingsec_calculationpage_content_table_tbody">
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Стоимость автомобиля
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~ 1 500 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Цена самого авто в Японии (аукцион/дилер) под выбранные параметры. Фиксируется только после выбора конкретного лота/варианта. На сумму влияют комплектация, пробег, оценка, спрос, сезон. Оплата: после вашего подтверждения о покупке. Машина участвует в аукционе, и в случае выигрыша вы оплачиваете её по инвойсу
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Комиссия и сопровождение
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          100 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Фиксированная стоимость наших услуг: подбор по параметрам, проверка/фильтр рисков, организация покупки, координация логистики и таможни, контроль документов и статусов, выдача авто в РФ. Не зависит от курса валют. Фиксируется в договоре до старта
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Доставка до Владивостока
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~ 80 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Международная логистика (Япония → Владивосток) + экспортное оформление. Включает: доставка с аукциона до порта, портовые/экспортные процедуры, морская перевозка (Ro-Ro/контейнер). Может немного меняться из-за тарифов перевозчика и сезона, но согласуется заранее. Оплата: по инвойсу одним платежом вместе со стоимостью автомобиля
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Погрузо-разгрузочные работы (ПРР)
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~ 30 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          По прибытии вашего автомобиля во Владивосток его размещают на складе временного хранения (СВХ). Процесс включает выгрузку с парома, фотофиксацию, перемещение на склад и хранение до завершения таможенной очистки. Обычно это занимает около пяти рабочих дней. Первые 5–7 дней хранения на СВХ бесплатны. За дополнительное время потребуется доплата, размер которой зависит от конкретного склада. Оплата при получении авто с склада
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Таможенный брокер
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~ 10 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Формирование полного пакета документов для подачи в таможенное оформление. Досмотр автомобиля, сверка номеров агрегатов, фотофиксация. Представление ваших интересов в таможне. Оплата по факту выполнения работ
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Утилизационный сбор
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          5 200 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Государственный платёж. В этом случае применяется льготная ставка для физических лиц при определённых параметрах автомобиля, включая мощность. Если выбрать автомобиль с другими характеристиками, например, более мощный, условия и сумма могут измениться. Оплата: в рамках таможенного оформления
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          ЭРА-ГЛОНАСС
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~ 45 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Обязательная установка блока для получения/ оформления документов РФ и дальнейшей регистрации. Состоит из оборудования + установки + регистрации. Цена зависит от подрядчика/наличия оборудования, но порядок цен понятен заранее. Оплата: после ввоза, перед выпуском/оформлением конечного пакета документов. Постановление на январь 2026 года на стадии подписания, еще не принято. Считаем для подстраховки
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Размещение на таможенном складе
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~30 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						           Временное хранение автомобиля на СВХ до завершения таможенного оформления. Включает приёмку, хранение, перемещения по складу. Срок и стоимость зависят от региона, загруженности склада и длительности оформления.
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          СБКТС + ЭПТС
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~20 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Свидетельство безопасности конструкции. Нужен документально подтверждённый допуск к эксплуатации в РФ. Электронный паспорт транспортного средства. Это основной документ для постановки на учёт в РФ. Стоимость зависит от аккредитованной лаборатории и загруженности, но обычно в понятном коридоре. Оплата: после ввоза, на этапе подготовки документов
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Временная регистрация
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~10 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Ввозимый груз таможится без личного присутствия только на прописанных в ДВФО жителей
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Доставка по РФ
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~140 000 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Перевозка Владивосток → Новосибирск. Влияют расстояние, сезон, тип доставки (автовоз/жд/контейнер), срочность. Можно выбрать альтернативу: дешевле/ дольше или дороже/быстрее. Оплата: по факту организации отправки по РФ
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Прочие обязательные расходы
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          Включено/0 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Здесь важно: мы не «прячем» обязательные платежи. Если в вашем сценарии появятся дополнительные обязательные статьи (например, платное хранение при задержке оформления по причинам клиента), они заранее согласуются и привязываются к конкретной причине/документу, а не возникают «просто так»
+						        </td>
+						      </tr>
+
+						      <tr>
+						        <td class="col-title" data-label="Статья расходов">
+						          Итого (стандартный сценарий)
+						        </td>
+						        <td class="col-sum" data-label="Сумма">
+						          ~2 155 400 ₽
+						        </td>
+						        <td class="col-comment" data-label="Комментарий">
+						          Итог под ключ при стандартном маршруте и без опций «по желанию». Окончательная цифра фиксируется после выбора конкретного авто и подтверждения выкупа
+						        </td>
+						      </tr>
+						    </tbody>
+						  </table>
+						</div>
+						<div class="detailingsec_calculationpage_content_list">
+							<div class="detailingsec_calculationpage_content_list_item">
+								<h3>Что в расчёте фиксируется заранее</h3>
+								<p class="detailingsec_calculationpage_content_list_item_header">Эти параметры не меняются по ходу сделки и закрепляются до старта:</p>
+								<ul class="detailingsec_calculationpage_content_list_item_info">
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Комиссия и состав услуг</b>
+										<p>Объём работ и стоимость сопровождения фиксируются в договоре и не зависят от курса, цены авто или сроков</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Перечень обязательных платежей</b>
+										<p>Мы сразу учитываем все обязательные расходы для ввоза, оформления и регистрации автомобиля в РФ. Новые обязательные статьи «из ниоткуда» не появляются</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Порядок и логика оплат</b>
+										<p>Оплаты происходят по этапам сделки, а не авансом «за всё сразу». Каждый платёж привязан к конкретному действию и документу</p>
+									</li>
+								</ul>
+							</div>
+							<div class="detailingsec_calculationpage_content_list_item">
+								<img src="img/raschet.png" alt="">
+							</div>
+							<div class="detailingsec_calculationpage_content_list_item">
+								<h3>Что может меняться объективно</h3>
+								<p class="detailingsec_calculationpage_content_list_item_header">Эти параметры зависят не от сторон сделки, а от внешних условий или выбранного автомобиля. Если любой из этих факторов меняется, решение продолжать сделку принимается только с согласия клиента</p>
+								<ul class="detailingsec_calculationpage_content_list_item_info">
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Цена конкретного автомобиля</b>
+										<p>Финально фиксируется после выбора конкретного экземпляра (лот, комплектация, пробег, состояние)</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Курс валют на дату платежей</b>
+										<p>Влияет на стоимость автомобиля и таможенные платежи в рублях</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Тарифы логистики</b>
+										<p>Могут незначительно колебаться в зависимости от сезона, перевозчика и маршрута</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Размер пошлины и утилизационного сбора</b>
+										<p>Зависит от параметров автомобиля: объёма двигателя, возраста, мощности</p>
+									</li>
+								</ul>
+							</div>
+							<div class="detailingsec_calculationpage_content_list_item">
+								<h3>Что не включено в расчёт</h3>
+								<p class="detailingsec_calculationpage_content_list_item_header">Эти расходы только по желанию <br> клиента, не является обязательным. <br> Все такие опции обсуждаются <br> отдельно и заранее</p>
+								<ul class="detailingsec_calculationpage_content_list_item_info">
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Доставка «до двери»</b>
+										<p>Если нужен эвакуатор или индивидуальный маршрут вместо стандартной доставки</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Страхование перевозки</b>
+										<p>Дополнительная защита на время транспортировки</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Дополнительные проверки</b>
+										<p>Расширенные осмотры или экспертизы сверх стандартного чек-листа</p>
+									</li>
+									<li class="detailingsec_calculationpage_content_list_item_info_item">
+										<b>Ускоренные варианты логистики</b>
+										<p>Более быстрые, но более дорогие маршруты или способы доставки</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<button class="detailingsec_calculationpage_content_btn modal_writebtn">
+							<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.05929 19.781L11.6245 9.57803L0.624512 0.780972" stroke="#FFFFFF" stroke-width="2"></path>
+									<defs>
+									<linearGradient id="paint0_linear_629_136" x1="6.12451" y1="0.780972" x2="6.12451" y2="19.781" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#FFFFFF"></stop>
+									<stop offset="1" stop-color="#FFFFFF"></stop>
+									</linearGradient>
+									</defs>
+									</svg>
+							<p>Получить расчёт</p>
+						</button>
+						<p class="detailingsec_calculationpage_content_btn_title">Сделаем расчёт под ваш запрос и покажем реальную итоговую стоимость и сроки</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ordersec_aboutcompanypage">
+			<div class="full_container">
+				<div class="main__container">
+					<div class="ordersec_aboutcompanypage_content">
+						<div class="ordersec_aboutcompanypage_content_leftpart">
+							<div class="ordersec_aboutcompanypage_content_leftpart_title">
+								<b>Спасибо, что дочитали!  </b>
+								<p>Значит вам важны реальное понимание условий, рисков и итоговой стоимости, а не беcконечные рекламные объявления с обманчивой заниженной ценой.</p>
+								<img src="img/ordersec_aboutcompanypage_content_leftpart_title_image.png" alt="">
+							</div>
+						</div>
+						<div class="ordersec_aboutcompanypage_content_rightpart">
+							<h2>Запросите у нас составление 2 расчетов:</h2>
+							<ul>
+								<li class="ordersec_aboutcompanypage_content_rightpart_list_item">
+									Cколько будет стоить итоговая <br> доставка автомобиля под заказ
+								</li>
+								<li class="ordersec_aboutcompanypage_content_rightpart_list_item">
+									Cколько будет стоить покупка аналогичного <br> авто в РФ на сопоставимых условиях
+								</li>
+							</ul>
+							<div class="ordersec_aboutcompanypage_content_rightpart_container">
+								<button class="ordersec_aboutcompanypage_content_rightpart_btn modal_writebtn">
+									<svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.05929 19.781L11.6245 9.57803L0.624512 0.780972" stroke="#FFFFFF" stroke-width="2"/>
+									<defs>
+									<linearGradient id="paint0_linear_629_136" x1="6.12451" y1="0.780972" x2="6.12451" y2="19.781" gradientUnits="userSpaceOnUse">
+									<stop stop-color="#FFFFFF"/>
+									<stop offset="1" stop-color="#FFFFFF"/>
+									</linearGradient>
+									</defs>
+									</svg>
+									<p>Получить расчёт</p>
+								</button>
+								<p class="ordersec_aboutcompanypage_content_rightpart_container_title">Чтобы составить ответ нам от вас потребуются: заполненная анкета и 1 контакт для уточнения параметров</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<footer>
+			<div class="full_container">
+				<div class="main__container">
+					<div class="footer_content">
+						<div class="footer_content_logo">
+							<a href="index.html">
+								<img src="img/footer_content_logo.svg" alt="">
+							</a>
+						</div>
+						<div class="footer_content_title">
+							<p>Доставка автомобилей под ключ из Японии и Китая в Россию. Подбор и проверка авто, покупка за границей, логистика, таможня, ЭПТС, СБКТС и доставка по РФ из Владивостока. Работаем с частными клиентами, считаем полную стоимость импорта заранее и оформляем сделку по договору без скрытых платежей.</p>
+						</div>
+						<div class="footer_content_navmenu">
+							<nav>
+								<ul class="footer_content_navmenu_list">
+									<li class="footer_content_navmenu_item">
+										<a href="about_company.html">
+											О компании
+										</a>
+									</li>
+									<li class="footer_content_navmenu_item">
+										<a href="calculation.html">
+											Пример расчета
+										</a>
+									</li>
+									<li class="footer_content_navmenu_item">
+										<a href="contacts.html">
+											Контакты
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer_content_contacts">
+							<a href="tel:+79241324444">
+								+7 (924) 132-44-44
+							</a>
+							<a href="mailto:Autobazarvl@yandex.ru">
+								Autobazarvl@yandex.ru
+							</a>
+							<div class="footer_content_contacts_messengers">
+								<a href="#">
+									<img src="img/otechestvenniyvasiamessenger.svg" alt="">
+								</a>
+								<a href="#">
+									<img src="img/tg.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer_content_copyrights">
+						<div class="footer_content_copyrights_item">
+							<p>ИП Ванева Ирина Валерьевна </p>
+							<p>ИНН: 250809534959</p>
+							<p>ОГРН: 324253600077022</p>
+						</div>
+						<div class="footer_content_copyrights_item">
+							<p>© 2025 "AUTOBAZAR"</p>
+						</div>
+						<div class="footer_content_copyrights_item">
+							<a href="#">
+								Договор оферты
+							</a>
+							<a href="#">
+								Политика конфиденциальности
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+		<div class="modal-overlay" id="modalOverlay">
+			<div class="modal_cont" id="modal_cont">
+				<div class="modal_content">
+					<button class="close_btn_modal" id="closeBtn_modal" aria-label="Закрыть">
+						<img src="img/close_modal.svg" alt="">
+					</button>
+					<div class="kvizsec_mainpage_content_main">
+							<div class="kvizsec_mainpage_content_main_title">
+								<div class="kvizsec_mainpage_content_main_title_director">
+									<img src="img/kvizsec_mainpage_content_main_title_director.png" alt="">
+									<div class="kvizsec_mainpage_content_main_title_director_info">
+										<b>Сергей Ванев</b>
+										<p>Сергей Ванев  управляющий компании “Автобазар”</p>
+									</div>
+								</div>
+								<p class="kvizsec_mainpage_content_main_title_fast">Готовит расчет вручную в течение 1 дня</p>
+							</div>
+							<form action="#" class="kvizsec_form_modal">
+								<div class="kvizsec_mainpage_content_main_slider_container">
+									<div class="kvizsec_mainpage_content_main_slider_modal">
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Марка автомобиля</h3>
+											<div class="select" data-name="car-brand21">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите марку автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите марку автомобиля</h3>
+											<div class="select" data-name="car-brand22">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите марку автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите цвет автомобиля</h3>
+											<div class="select" data-name="car-brand23">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите цвет автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите вес автомобиля</h3>
+											<div class="select" data-name="car-brand24">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите вес автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите страну автомобиля</h3>
+											<div class="select" data-name="car-brand25">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите страну автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите страну автомобиля</h3>
+											<div class="select" data-name="car-brand26">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите страну автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите страну автомобиля</h3>
+											<div class="select" data-name="car-brand27">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите страну автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+										<div class="kvizsec_mainpage_content_main_slider_item">
+											<h3>Выберите страну автомобиля</h3>
+											<div class="select" data-name="car-brand28">
+											  	<button type="button" class="select__head">
+												    <span class="select__value">Выберите страну автомобиля</span>
+												    <span class="select__arrow"></span>
+											  	</button>
+
+												<ul class="select__list">
+												    <li class="select__item" data-value="toyota">Toyota</li>
+												    <li class="select__item" data-value="honda">Honda</li>
+												    <li class="select__item" data-value="nissan">Nissan</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="kvizsec_mainpage_content_main_slider_buttons">
+										<button type="button" class="kvizsec_mainpage_content_main_slider_modal_buttons_arrowleft">
+											<img src="img/kvizsec_mainpage_content_main_slider_arrow.svg" alt="">
+										</button>
+										<button type="button" class="kvizsec_mainpage_content_main_slider_modal_buttons_arrowright">
+											<p>Следующий шаг</p>
+											<img src="img/kvizsec_mainpage_content_main_slider_arrow_right.svg" alt="">
+										</button>
+									</div>
+									<div class="kviz-progress_container">
+										<div class="kviz-progress-modal">
+	  										<span class="kviz-progress-modal-current">01</span>
+
+											<div class="kviz-progress-modal-bar">
+											<div class="kviz-progress-modal-fill"></div>
+											</div>
+
+	  										<span class="kviz-progress-modal-total">08</span>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="js/jquery-3.6.2.min.js"></script>
+	 	<script src="js/slick.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/main.js"></script>  
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script> 	
+	</div>
+</body>
+</html>
+
